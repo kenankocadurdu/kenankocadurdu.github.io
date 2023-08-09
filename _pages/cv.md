@@ -10,8 +10,8 @@ redirect_from:
 {% include base_path %}
 
 
-Work experience
-======
+<h2>Work experience</h2>
+
 * 2019 - Present: Computer Engineer (Researcher)
   * Bakircay University Cigli Training and Research Hospital
     * Developed 1 medical device prototype
