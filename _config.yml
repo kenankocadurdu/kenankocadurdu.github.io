@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Kenan KOCADURDU - Computer Engineer"
+title                    : "Kenan KOCADURDU"
 title_separator          : "-"
 name                     : &name "Kenan KOCADURDU"
 description              : &description "personal description"

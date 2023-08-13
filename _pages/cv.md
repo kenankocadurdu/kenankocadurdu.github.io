@@ -9,7 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-
 <h2>Work experience</h2>
 
 * 2019 - Present: Computer Engineer (Researcher)

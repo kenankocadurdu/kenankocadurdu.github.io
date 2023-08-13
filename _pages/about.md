@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Computer Engineer"
+title: "Computer"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
