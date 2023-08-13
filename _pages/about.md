@@ -8,4 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-I am a results-driven specialist in AI and Machine Learning with a strong background in software engineering. I am deeply committed to improving healthcare through advanced technology. With a substantial experience of over 3 years in designing and implementing AI solutions, I am well-prepared to contribute significantly to the transformation of the healthcare industry. I am enthusiastic about collaborating with an international team and leading the progress of AI-driven applications.
+Fueled by my academic and industry journey, I'm progressing as a medical informatics researcher and software developer, enthusiastically striving to make unique contributions at the dynamic intersection of medicine and technology.
+I am deeply committed to improving healthcare through advanced technology. With a substantial experience of over 3 years in designing and implementing AI solutions, I am well-prepared to contribute significantly to the transformation of the healthcare industry. I am enthusiastic about collaborating with an international team and leading the progress of AI-driven applications.
