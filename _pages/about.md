@@ -8,7 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-Fueled by my academic and industry journey, I'm progressing as a medical informatics researcher and software developer, enthusiastically striving to make unique contributions at the dynamic intersection of medicine and technology.
-I am deeply committed to improving healthcare through advanced technology. With a substantial experience of over 3 years in designing and implementing AI solutions, I am well-prepared to contribute significantly to the transformation of the healthcare industry. I am enthusiastic about collaborating with an international team and leading the progress of AI-driven applications.
+With over years of hands-on experience in software engineering and a deep-rooted commitment to revolutionizing healthcare through cutting-edge technology, I am driven to make a lasting impact. My expertise in AI and Machine Learning empowers me to catalyze transformative changes within the healthcare sector. I am excited about the prospect of collaborating with a global team of experts to spearhead the development of AI-powered applications that seamlessly integrate with healthcare solutions. By leveraging our collective skills, I envision a future where AI not only enhances medical diagnostics and treatments but also elevates patient outcomes on a global scale
 
 Machine Learning, Deep Learning, Federated Learning, Medical Image Analysis
