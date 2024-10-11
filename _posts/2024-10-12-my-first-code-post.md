@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: code
 title: "My First Code Post"
 date: 2024-10-12
 author_profile: true
