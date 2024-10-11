@@ -25,15 +25,17 @@ redirect_from:
       padding-bottom: 10px;
       margin-bottom: 20px;
     }
+    h2 {
+        color: #007bff;
+    }
     h3 i {
       margin-right: 10px;
-      color: #007bff;
     }
     p {
       margin: 5px 0;
     }
     p strong {
-      color: #007bff;
+
     }
     ul {
       list-style-type: none;
@@ -42,13 +44,6 @@ redirect_from:
     ul li {
       margin-bottom: 10px;
       position: relative;
-      padding-left: 20px;
-    }
-    ul li:before {
-      content: "\2022";
-      position: absolute;
-      left: 0;
-      font-size: 1.2em;
     }
     hr {
       margin: 20px 0;
@@ -71,7 +66,7 @@ redirect_from:
   <hr>
   <h2 class="section-title"><i class="fas fa-briefcase icon"></i> Professional Experience</h2>
   <div class="experience-item">
-    <h3><i class="fas fa-laptop-code icon"></i> Computer Engineer - Bakircay University Hospital</h3>
+    <h3><i class="fas fa-laptop-code icon"></i> Computer Engineer - Bakircay University Training and Research Hospital</h3>
     <p><em>2023 - Present</em></p>
     <ul>
       <li><i class="fas fa-flask icon"></i> Conducted research on deep learning models for drug discovery.</li>
@@ -79,7 +74,7 @@ redirect_from:
     </ul>
   </div>
   <div class="experience-item">
-    <h3><i class="fas fa-cogs icon"></i> IT Specialist & AI Consultant - Various Health Organizations</h3>
+    <h3><i class="fas fa-cogs icon"></i> IT Specialist - Various Health Organizations</h3>
     <p><em>2017 - 2022</em></p>
     <ul>
       <li><i class="fas fa-project-diagram icon"></i> Designed and implemented AI-driven solutions for healthcare systems.</li>
@@ -129,7 +124,7 @@ redirect_from:
   </div>
   <hr>
   <h2 class="section-title"><i class="fas fa-users icon"></i> Volunteering & Memberships</h2>
-  <div class="languages">s
+  <div class="languages">
   <ul>
     <li><i class="fas fa-hands-helping icon"></i> Founding Board Member, Aegean Health Managers Association</li>
     <li><i class="fas fa-user-md icon"></i> Member, Medical Informatics Association</li>
