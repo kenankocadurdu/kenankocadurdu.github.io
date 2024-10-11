@@ -7,7 +7,6 @@ redirect_from:
   - /resume
 ---
 {% include base_path %}
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +21,7 @@ redirect_from:
       padding: 20px;
     }
     h2.section-title {
-      border-bottom: 2px solid #007bff;
+      border-bottom: 2px solid;
       padding-bottom: 10px;
       margin-bottom: 20px;
     }
@@ -49,7 +48,6 @@ redirect_from:
       content: "\2022";
       position: absolute;
       left: 0;
-      color: #007bff;
       font-size: 1.2em;
     }
     hr {
@@ -65,14 +63,11 @@ redirect_from:
     }
   </style>
 </head>
-
 <div class="container">
-
   <h2 class="section-title"><i class="fas fa-user icon"></i> Summary</h2>
   <p>
     I am a PhD Candidate in Computer Engineering with a strong background in machine learning, deep learning, and medical image analysis. I specialize in AI-driven solutions for the healthcare industry, focusing on medical image analysis, drug discovery, and bioinformatics. With over five years of experience in the field, I am dedicated to applying advanced technologies to solve complex healthcare challenges.
   </p>
-
   <hr>
   <h2 class="section-title"><i class="fas fa-briefcase icon"></i> Professional Experience</h2>
   <div class="experience-item">
@@ -91,7 +86,6 @@ redirect_from:
       <li><i class="fas fa-industry icon"></i> Focused on improving industrial processes through IoT and automation.</li>
     </ul>
   </div>
-
   <hr>
   <h2 class="section-title"><i class="fas fa-code icon"></i> Technical Skills</h2>
   <ul>
@@ -99,7 +93,6 @@ redirect_from:
     <li><i class="fas fa-robot icon"></i> <strong>Machine Learning:</strong> Deep Learning, Computer Vision, Federated Learning</li>
     <li><i class="fas fa-tools icon"></i> <strong>Tools:</strong> Git, Docker, MLFlow, Scikit-Learn, Neptune.ai</li>
   </ul>
-
   <hr>
   <h2 class="section-title"><i class="fas fa-graduation-cap icon"></i> Education</h2>
   <ul>
@@ -109,7 +102,6 @@ redirect_from:
       <p><strong>Focus:</strong> Federated Learning for Medical Image Domain</p>
       <h3><i class="fas fa-university icon"></i> Bachelor's Degree in Computer Engineering [<em>S.Demirel University - 2015</em>]</h3>
   </ul>
-
   <hr>
   <h2 class="section-title"><i class="fas fa-book icon"></i> Publications</h2>
   <ul>
@@ -121,7 +113,6 @@ redirect_from:
       </li>
     {% endfor %}
   </ul>
-
   <hr>
   <h2 class="section-title"><i class="fas fa-certificate icon"></i> Certifications</h2>
   <ul>
@@ -129,7 +120,6 @@ redirect_from:
     <li><i class="fas fa-check icon"></i> Microsoft AI Engineer Certification</li>
     <li><i class="fas fa-check icon"></i> Coursera Machine Learning and Deep Learning Specializations</li>
   </ul>
-
   <hr>
   <h2 class="section-title"><i class="fas fa-language icon"></i> Languages</h2>
   <div class="languages">
@@ -137,16 +127,12 @@ redirect_from:
     <span><i class="fas fa-globe icon"></i> <strong>English:</strong> B2 (Improving)</span>
     <span><i class="fas fa-globe icon"></i> <strong>German:</strong> A1 (Improving)</span>
   </div>
-
-
   <hr>
   <h2 class="section-title"><i class="fas fa-users icon"></i> Volunteering & Memberships</h2>
+  <div class="languages">s
   <ul>
     <li><i class="fas fa-hands-helping icon"></i> Founding Board Member, Aegean Health Managers Association</li>
     <li><i class="fas fa-user-md icon"></i> Member, Medical Informatics Association</li>
   </ul>
-
+    </div>
 </div>
-
-
-
