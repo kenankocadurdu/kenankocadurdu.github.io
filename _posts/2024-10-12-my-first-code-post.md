@@ -1,10 +1,13 @@
 ---
-layout: post
+layout: default
 title: "My First Code Post"
 date: 2024-10-12
-categories: code
 author_profile: true
+categories: code
 ---
+
+{% include base_path %}
+
 
 ## Introduction
 
