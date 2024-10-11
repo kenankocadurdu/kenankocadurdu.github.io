@@ -1,6 +1,5 @@
 ---
 layout: archive
-title:
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -26,16 +25,13 @@ redirect_from:
       margin-bottom: 20px;
     }
     h2 {
-        color: #007bff;
+      margin-right: 10px;
     }
     h3 i {
       margin-right: 10px;
     }
     p {
       margin: 5px 0;
-    }
-    p strong {
-
     }
     ul {
       list-style-type: none;
@@ -58,6 +54,7 @@ redirect_from:
     }
   </style>
 </head>
+
 <div class="container">
   <h2 class="section-title"><i class="fas fa-user icon"></i> Summary</h2>
   <p>
@@ -102,18 +99,18 @@ redirect_from:
   <ul>
     {% for post in site.publications %}
       <li>
-        <i class="fas fa-file-alt icon"></i> <!-- Yayın için bir ikon ekliyoruz -->
-        <strong><a href="{{ post.url }}">{{ post.title }}</a></strong> <!-- Yayın başlığına link -->
-        <p>{{ post.excerpt }}</p> <!-- Yayının kısa özeti -->
+        <i class="fas fa-file-alt icon"></i>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>
   <hr>
   <h2 class="section-title"><i class="fas fa-certificate icon"></i> Certifications</h2>
   <ul>
-    <li><i class="fas fa-check icon"></i> NVIDIA Certified AI Practitioner</li>
-    <li><i class="fas fa-check icon"></i> Microsoft AI Engineer Certification</li>
-    <li><i class="fas fa-check icon"></i> Coursera Machine Learning and Deep Learning Specializations</li>
+    <li><i class="fas fa-certificate icon"></i> NVIDIA Certified AI Practitioner</li>
+    <li><i class="fas fa-certificate icon"></i> Microsoft AI Engineer Certification</li>
+    <li><i class="fas fa-certificate icon"></i> Coursera Machine Learning and Deep Learning Specializations</li>
   </ul>
   <hr>
   <h2 class="section-title"><i class="fas fa-language icon"></i> Languages</h2>
@@ -122,12 +119,4 @@ redirect_from:
     <span><i class="fas fa-globe icon"></i> <strong>English:</strong> B2 (Improving)</span>
     <span><i class="fas fa-globe icon"></i> <strong>German:</strong> A1 (Improving)</span>
   </div>
-  <hr>
-  <h2 class="section-title"><i class="fas fa-users icon"></i> Volunteering & Memberships</h2>
-  <div class="languages">
-  <ul>
-    <li><i class="fas fa-hands-helping icon"></i> Founding Board Member, Aegean Health Managers Association</li>
-    <li><i class="fas fa-user-md icon"></i> Member, Medical Informatics Association</li>
-  </ul>
-    </div>
 </div>
