@@ -17,7 +17,7 @@ redirect_from:
       padding: 20px;
     }
     .container {
-      margin: 0 auto;
+      margin: -30 auto;
       padding: 20px;
     }
     h2.section-title {
