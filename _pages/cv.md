@@ -132,6 +132,4 @@ redirect_from:
     <span><i class="fas fa-globe icon"></i> <strong>English:</strong> B2 (Improving)</span>
     <span><i class="fas fa-globe icon"></i> <strong>German:</strong> A1 (Improving)</span>
   <hr>
-  <h2 class="section-title"><i></i></h2>
-  <hr>
 </div>
