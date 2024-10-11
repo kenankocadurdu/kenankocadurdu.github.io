@@ -17,4 +17,4 @@ Currently, I am working on my PhD thesis, which aims to enhance drug discovery t
 Feel free to explore my portfolio and get in touch for collaboration!
 
 
-Artificial Intelligence, Machine Learning, Deep Learning, Medical Image Analysis, Drug Discovery
+Machine Learning, Deep Learning, Medical Image Analysis, Bioinformatics
