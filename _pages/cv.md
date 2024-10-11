@@ -62,8 +62,9 @@ redirect_from:
     <h3><i class="fas fa-laptop-code icon"></i> Computer Engineer - Bakircay University Training and Research Hospital</h3>
     <p><em>2023 - Present</em></p>
     <ul>
-      <li><i class="fas fa-flask icon"></i> Conducted research on deep learning models for drug discovery.</li>
-      <li><i class="fas fa-vial icon"></i> Contributed to ongoing cancer research projects.</li>
+      <li><i class="fas fa-flask icon"></i> Actively engaged in academic research, with a particular focus on medical image analysis and recent work on protein-ligand interaction studies.</li>
+      <li><i class="fas fa-microchip icon"></i> Led the conception and execution of an innovative Internet of Things (IoT) project derived from academic research, focusing on the automated analysis of blood culture gram stains.</li>
+      <li><i class="fas fa-calculator icon"></i> Contributed to hospital cost analysis studies, culminating in the development of a Java-based web application as the final output.</li>
     </ul>
   </div>
   <div class="experience-item">
