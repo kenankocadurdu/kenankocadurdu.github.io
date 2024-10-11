@@ -14,11 +14,6 @@ redirect_from:
   <style>
     body {
       margin: 0;
-      padding: 20px;
-    }
-    .container {
-      margin: -30 auto;
-      padding: 20px;
     }
     h2.section-title {
       border-bottom: 2px solid;
@@ -72,13 +67,30 @@ redirect_from:
     </ul>
   </div>
   <div class="experience-item">
-    <h3><i class="fas fa-cogs icon"></i> IT Specialist - Various Health Organizations</h3>
-    <p><em>2017 - 2022</em></p>
+    <h3><i class="fas fa-desktop icon"></i> IT Specialist - Aydin Health Directorate</h3>
+    <p><em>2017 - 2019</em></p>
     <ul>
-      <li><i class="fas fa-project-diagram icon"></i> Designed and implemented AI-driven solutions for healthcare systems.</li>
-      <li><i class="fas fa-industry icon"></i> Focused on improving industrial processes through IoT and automation.</li>
+      <li><i class="fas fa-server icon"></i> Led the installation and maintenance of IT systems across a portfolio of over 10 hospitals, ensuring seamless operations and optimal performance.</li>
+      <li><i class="fas fa-users-cog icon"></i> Designed, developed, and deployed an information management system tailored for the Human Resources department, streamlining processes and enhancing data efficiency.</li>
     </ul>
   </div>
+  <div class="experience-item">
+    <h3><i class="fas fa-code icon"></i> Software Engineer - Maroli Food Industry and Foreign Trade. Inc.</h3>
+    <p><em>2017 - 2018</em></p>
+    <ul>
+      <li><i class="fas fa-industry icon"></i> Engineered an Enterprise Resource Planning (ERP) application specifically for an Olive Factory, orchestrating a significant optimization of business operations.</li>
+      <li><i class="fas fa-chart-line icon"></i> Efficiency improvements of 10% in the raw material purchasing process and 5% in the production process have been realized.</li>
+    </ul>
+  </div>
+  <div class="experience-item">
+    <h3><i class="fas fa-laptop-code icon"></i> Computer Engineer - Aydin Cancer Early Diagnosis Center</h3>
+    <p><em>2014 - 2017</em></p>
+    <ul>
+      <li><i class="fas fa-database icon"></i> Oversaw the maintenance of the data storage infrastructure at the center, ensuring data integrity and system reliability.</li>
+      <li><i class="fas fa-stethoscope icon"></i> Developed and deployed a Java-based web application for a patient tracking system, effectively optimizing transactions and resulting in significant time and material savings.</li>
+    </ul>
+  </div>
+
   <hr>
   <h2 class="section-title"><i class="fas fa-code icon"></i> Technical Skills</h2>
   <ul>

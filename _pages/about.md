@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I’m Kenan Kocadurdu, a PhD candidate in Computer Engineering, specializing in Artificial Intelligence. My research focuses on medical image analysis and personalized medicine. I have significant experience in developing AI-driven solutions for both healthcare and industrial sectors.
+Hello! I am Kenan, a PhD candidate in Computer Engineering, specializing in Artificial Intelligence. My research focuses on medical image analysis and personalized medicine. I have significant experience in developing AI-driven solutions for both healthcare and industrial sectors.
 
 With expertise in deep learning, computer vision, and bioinformatics, I am dedicated to applying technology to solve complex medical problems.
 
@@ -17,4 +17,4 @@ Currently, I am working on my PhD thesis, which aims to enhance drug discovery t
 Feel free to explore my portfolio and get in touch for collaboration!
 
 
-Artificial Intelligence, Machine Learning, Deep Learning, Medical Image Analysis
+Artificial Intelligence, Machine Learning, Deep Learning, Medical Image Analysis, Drug Discovery
