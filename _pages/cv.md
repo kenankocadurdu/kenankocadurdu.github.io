@@ -1,5 +1,6 @@
 ---
 layout: archive
+title: Kenan Kocadurdu
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -56,7 +57,7 @@ redirect_from:
 </head>
 
 <div class="container">
-  <h2 class="section-title"><i class="fas fa-user icon"></i> Summary</h2>
+  <h2 class="section-title"><i class="fas fa-user icon"></i> Summary </h2>
   <p>
     I am a PhD Candidate in Computer Engineering with a strong background in machine learning, deep learning, and medical image analysis. I specialize in AI-driven solutions for the healthcare industry, focusing on medical image analysis, drug discovery, and bioinformatics. With over five years of experience in the field, I am dedicated to applying advanced technologies to solve complex healthcare challenges.
   </p>
