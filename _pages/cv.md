@@ -114,11 +114,9 @@ redirect_from:
   </ul>
   <hr>
   <h2 class="section-title"><i class="fas fa-language icon"></i> Languages</h2>
-  <div class="languages">
     <span><i class="fas fa-globe icon"></i> <strong>Turkish:</strong> Native</span>
     <span><i class="fas fa-globe icon"></i> <strong>English:</strong> B2 (Improving)</span>
     <span><i class="fas fa-globe icon"></i> <strong>German:</strong> A1 (Improving)</span>
-  </div>
   <hr>
 
 </div>
