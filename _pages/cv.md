@@ -6,53 +6,59 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
 {% include base_path %}
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
       margin: 0;
-      padding: 0;
-    }
-
-    h1, h2, h3 {
-      color: #333;
-    }
-
-    .container {
-      margin: auto;
       padding: 20px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
-
-    .section-title {
-      border-bottom: 2px solid #333;
+    .container {
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h2.section-title {
+      border-bottom: 2px solid #007bff;
       padding-bottom: 10px;
       margin-bottom: 20px;
     }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-
-    .icon {
+    h3 i {
       margin-right: 10px;
       color: #007bff;
     }
-
+    p {
+      margin: 5px 0;
+    }
+    p strong {
+      color: #007bff;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+    }
+    ul li:before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #007bff;
+      font-size: 1.2em;
+    }
     hr {
       margin: 20px 0;
       border: 1px solid #ddd;
     }
-
+    .experience-item, .education-item {
+      margin-bottom: 20px;
+    }
     .languages {
       display: flex;
       gap: 20px;
@@ -61,9 +67,6 @@ redirect_from:
 </head>
 
 <div class="container">
-  <h1>Kenan Kocadurdu - Curriculum Vitae</h1>
-
-  <hr>
 
   <h2 class="section-title"><i class="fas fa-user icon"></i> Summary</h2>
   <p>
@@ -71,7 +74,25 @@ redirect_from:
   </p>
 
   <hr>
+  <h2 class="section-title"><i class="fas fa-briefcase icon"></i> Professional Experience</h2>
+  <div class="experience-item">
+    <h3><i class="fas fa-laptop-code icon"></i> Computer Engineer - Bakircay University Hospital</h3>
+    <p><em>2023 - Present</em></p>
+    <ul>
+      <li><i class="fas fa-flask icon"></i> Conducted research on deep learning models for drug discovery.</li>
+      <li><i class="fas fa-vial icon"></i> Contributed to ongoing cancer research projects.</li>
+    </ul>
+  </div>
+  <div class="experience-item">
+    <h3><i class="fas fa-cogs icon"></i> IT Specialist & AI Consultant - Various Health Organizations</h3>
+    <p><em>2017 - 2022</em></p>
+    <ul>
+      <li><i class="fas fa-project-diagram icon"></i> Designed and implemented AI-driven solutions for healthcare systems.</li>
+      <li><i class="fas fa-industry icon"></i> Focused on improving industrial processes through IoT and automation.</li>
+    </ul>
+  </div>
 
+  <hr>
   <h2 class="section-title"><i class="fas fa-code icon"></i> Technical Skills</h2>
   <ul>
     <li><i class="fas fa-laptop-code icon"></i> <strong>Programming:</strong> Python, PyTorch, TensorFlow</li>
@@ -80,23 +101,28 @@ redirect_from:
   </ul>
 
   <hr>
-
-  <h2 class="section-title"><i class="fas fa-briefcase icon"></i> Professional Experience</h2>
-
-  <h3>Computer Engineer - Bakircay University Hospital</h3>
-  <p><em>2023 - Present</em></p>
+  <h2 class="section-title"><i class="fas fa-graduation-cap icon"></i> Education</h2>
   <ul>
-    <li><i class="fas fa-flask icon"></i> Conducted research on deep learning models for drug discovery, contributing to ongoing cancer research projects.</li>
-  </ul>
-
-  <h3>IT Specialist & AI Consultant - Various Health Organizations</h3>
-  <p><em>2017 - 2022</em></p>
-  <ul>
-    <li><i class="fas fa-cogs icon"></i> Designed and implemented AI-driven solutions, focusing on improving healthcare systems and industrial processes through IoT and automation.</li>
+      <h3><i class="fas fa-university icon"></i> PhD in Computer Engineering [ <em>Bakircay University - Ongoing</em> ]</h3>
+      <p><strong>Focus:</strong> Deep Learning for Drug Discovery</p>
+      <h3><i class="fas fa-university icon"></i> Master's Degree in Computer Engineering [<em>Bakircay University - 2023</em>]</h3>
+      <p><strong>Focus:</strong> Federated Learning for Medical Image Domain</p>
+      <h3><i class="fas fa-university icon"></i> Bachelor's Degree in Computer Engineering [<em>S.Demirel University - 2015</em>]</h3>
   </ul>
 
   <hr>
+  <h2 class="section-title"><i class="fas fa-book icon"></i> Publications</h2>
+  <ul>
+    {% for post in site.publications %}
+      <li>
+        <i class="fas fa-file-alt icon"></i> <!-- Yayın için bir ikon ekliyoruz -->
+        <strong><a href="{{ post.url }}">{{ post.title }}</a></strong> <!-- Yayın başlığına link -->
+        <p>{{ post.excerpt }}</p> <!-- Yayının kısa özeti -->
+      </li>
+    {% endfor %}
+  </ul>
 
+  <hr>
   <h2 class="section-title"><i class="fas fa-certificate icon"></i> Certifications</h2>
   <ul>
     <li><i class="fas fa-check icon"></i> NVIDIA Certified AI Practitioner</li>
@@ -105,34 +131,22 @@ redirect_from:
   </ul>
 
   <hr>
-
-  <h2 class="section-title"><i class="fas fa-users icon"></i> Volunteering & Memberships</h2>
-  <ul>
-    <li><i class="fas fa-hands-helping icon"></i> Founding Board Member, Aegean Health Managers Association</li>
-    <li><i class="fas fa-user-md icon"></i> Member, Medical Informatics Association</li>
-  </ul>
-
-  <hr>
-
-  <h2 class="section-title"><i class="fas fa-graduation-cap icon"></i> Education</h2>
-
-  <h3>PhD in Computer Engineering</h3>
-  <p><em>Bakircay University - Ongoing</em></p>
-  <p>Focus: Deep Learning for Drug Discovery</p>
-
-  <h3>Master's Degree in Computer Engineering</h3>
-  <p><em>Bakircay University - 2021</em></p>
-  <p>Focus: Federated Learning for Medical Image Domain</p>
-
-  <h3>Bachelor's Degree in Computer Engineering</h3>
-  <p><em>S.Demirel University - 2015</em></p>
-
-  <hr>
-
   <h2 class="section-title"><i class="fas fa-language icon"></i> Languages</h2>
   <div class="languages">
     <span><i class="fas fa-globe icon"></i> <strong>Turkish:</strong> Native</span>
     <span><i class="fas fa-globe icon"></i> <strong>English:</strong> B2 (Improving)</span>
     <span><i class="fas fa-globe icon"></i> <strong>German:</strong> A1 (Improving)</span>
   </div>
+
+
+  <hr>
+  <h2 class="section-title"><i class="fas fa-users icon"></i> Volunteering & Memberships</h2>
+  <ul>
+    <li><i class="fas fa-hands-helping icon"></i> Founding Board Member, Aegean Health Managers Association</li>
+    <li><i class="fas fa-user-md icon"></i> Member, Medical Informatics Association</li>
+  </ul>
+
 </div>
+
+
+
