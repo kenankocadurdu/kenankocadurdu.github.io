@@ -13,6 +13,7 @@ categories: code
 
 This is my first code post. Here’s an example of a Python function:
 
-```python
+{% highlight python %}
 def hello_world():
     print("Hello, World!")
+{% endhighlight %}
