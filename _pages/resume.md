@@ -17,7 +17,6 @@ redirect_from:
     body {
       margin: 0;
       font-family: sans-serif;
-      font-size: 15px;
       line-height: 1.6;
     }
     .container {
@@ -48,7 +47,7 @@ redirect_from:
       margin: 5px 0 0;
     }
     li {
-      margin: 3px 0;
+      margin: 2px 0 0 5px;
     }
     .languages span {
       margin-right: 15px;
@@ -71,7 +70,7 @@ redirect_from:
   <div class="experience-item">
     <div class="experience-header">
       <span><i class="fas fa-hospital icon"></i> Bakircay University Hospital – Computer Engineer</span>
-      <span><em>2019 – Present</em></span>
+      <span><em>2019 – 2025</em></span>
     </div>
     <ul>
       <li>Conduct research in AI for medical imaging, drug discovery, and bioinformatics.</li>
