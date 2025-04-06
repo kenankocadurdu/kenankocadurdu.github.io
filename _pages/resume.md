@@ -14,82 +14,87 @@ redirect_from:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    body { margin: 0; }
-    .section-title { border-bottom: 2px solid #ccc; padding-bottom: 10px; margin: 30px 0 20px; }
-    .icon { margin-right: 10px; }
-    p, li { margin: 5px 0; }
-    ul { list-style-type: none; padding-left: 0; }
-    .experience-item, .education-item { margin-bottom: 25px; }
-    .languages span { display: inline-block; margin-right: 20px; }
+    body { margin: 0; font-family: sans-serif; font-size: 15px; line-height: 1.5; }
+    .container { max-width: 950px; margin: auto; padding: 20px; }
+    .section-title { font-size: 18px; font-weight: 600; border-bottom: 1px solid #ccc; margin: 20px 0 10px; padding-bottom: 5px; }
+    h3 { font-size: 16px; margin: 10px 0 5px; }
+    p, li { margin: 2px 0; }
+    ul { list-style: none; padding-left: 15px; margin: 0; }
+    .experience-item, .education-item { margin-bottom: 15px; }
+    .languages span { margin-right: 15px; }
+    .icon { margin-right: 8px; }
   </style>
 </head>
 
 <div class="container">
   <h2 class="section-title"><i class="fas fa-user icon"></i> Summary</h2>
   <p>
-    PhD candidate in Computer Engineering with expertise in AI-based systems for healthcare. Skilled in deep learning, computer vision, and bioinformatics, with a focus on medical imaging, drug discovery, and intelligent automation. Passionate about developing scalable, data-driven solutions to address real-world challenges in clinical and industrial domains.
+    PhD candidate in Computer Engineering with expertise in AI-driven systems for healthcare and industrial domains. Skilled in machine learning, deep learning, computer vision, and bioinformatics. Passionate about scalable, data-centric technologies for real-world impact.
   </p>
 
-  <h2 class="section-title"><i class="fas fa-briefcase icon"></i> Professional Experience</h2>
-  
+  <h2 class="section-title"><i class="fas fa-briefcase icon"></i> Experience</h2>
   <div class="experience-item">
-    <h3><i class="fas fa-hospital icon"></i> Computer Engineer – Bakircay University Hospital</h3>
+    <h3><i class="fas fa-hospital icon"></i> Bakircay University Hospital – Computer Engineer</h3>
     <p><em>2019 – Present</em></p>
     <ul>
-      <li>Conduct research in AI for medical imaging and personalized healthcare.</li>
-      <li>Develop platforms for intelligent diagnosis and clinical decision support.</li>
-      <li>Design and deploy custom software for operational analysis and automation.</li>
+      <li>Conduct research in AI for medical imaging, drug discovery, and bioinformatics.</li>
+      <li>Developed <strong>EchoMotion</strong>, an AI tool for analyzing echocardiography videos.</li>
+      <li>Designed <strong>PLAff</strong>, an explainable protein-ligand interaction model using LLM-based knowledge graphs.</li>
+      <li>Built <strong>FlowSphere</strong>, an MLOps platform for streamlined model training, deployment, and monitoring.</li>
+      <li>Created <strong>AutoMicro</strong>, a system for automated analysis of microscopic images.</li>
+      <li>Engineered a Java-based hospital cost analysis tool for financial decision-making.</li>
+      <li>Developed a QR-based patrol tracking system using FastAPI and Node.js.</li>
     </ul>
   </div>
 
   <div class="experience-item">
-    <h3><i class="fas fa-network-wired icon"></i> IT Specialist – Aydin Health Directorate</h3>
+    <h3><i class="fas fa-network-wired icon"></i> Aydin Health Directorate – IT Specialist</h3>
     <p><em>2017 – 2019</em></p>
     <ul>
-      <li>Managed IT systems across more than 10 hospitals.</li>
-      <li>Designed and deployed HR and data management solutions.</li>
-      <li>Led training sessions to enhance system usage and efficiency.</li>
+      <li>Managed IT infrastructure across more than 10 hospitals, ensuring stability and performance.</li>
+      <li>Designed and implemented a human resources information system (HRIS).</li>
+      <li>Led technical training programs for IT staff.</li>
     </ul>
   </div>
 
   <div class="experience-item">
-    <h3><i class="fas fa-industry icon"></i> Software Engineer – Maroli Food Industry</h3>
+    <h3><i class="fas fa-industry icon"></i> Maroli Food Industry – Software Engineer</h3>
     <p><em>2017 – 2018</em></p>
     <ul>
-      <li>Developed an ERP system for production and procurement workflows.</li>
-      <li>Achieved measurable gains in resource planning and process optimization.</li>
+      <li>Built a custom ERP system for procurement and production operations in an olive factory.</li>
+      <li>Achieved 10% improvement in purchasing and 5% in production efficiency through automation.</li>
     </ul>
   </div>
 
   <div class="experience-item">
-    <h3><i class="fas fa-clinic-medical icon"></i> Computer Engineer – Aydin Cancer Early Diagnosis Center</h3>
+    <h3><i class="fas fa-clinic-medical icon"></i> Aydin Cancer Early Diagnosis Center – Computer Engineer</h3>
     <p><em>2014 – 2017</em></p>
     <ul>
-      <li>Maintained the data infrastructure ensuring reliability and integrity.</li>
-      <li>Developed a Java-based system for patient tracking and reporting.</li>
+      <li>Maintained data storage infrastructure with high availability and integrity.</li>
+      <li>Developed a Java-based web application for patient tracking and reporting.</li>
     </ul>
   </div>
 
-  <h2 class="section-title"><i class="fas fa-laptop-code icon"></i> Technical Skills</h2>
+  <h2 class="section-title"><i class="fas fa-code icon"></i> Technical Skills</h2>
   <ul>
-    <li><strong>Programming:</strong> Python, Java, MATLAB</li>
-    <li><strong>AI & ML:</strong> Deep Learning, Computer Vision, Federated Learning</li>
-    <li><strong>Frameworks & Tools:</strong> PyTorch, Scikit-Learn, MLFlow, FastAPI, Docker, Git</li>
-    <li><strong>Cloud & DevOps:</strong> Azure DevOps, Kubernetes</li>
-    <li><strong>Databases:</strong> Neo4j, Graph Databases</li>
+    <li><strong>Languages:</strong> Python, Java, MATLAB</li>
+    <li><strong>AI:</strong> Deep Learning, Computer Vision, Federated Learning</li>
+    <li><strong>Frameworks:</strong> PyTorch, Scikit-Learn, MLFlow, FastAPI</li>
+    <li><strong>DevOps:</strong> Docker, Kubernetes, Azure DevOps, Git</li>
+    <li><strong>Data:</strong> Neo4j, Graph Databases</li>
   </ul>
 
   <h2 class="section-title"><i class="fas fa-graduation-cap icon"></i> Education</h2>
   <ul>
-    <li><strong>PhD in Computer Engineering</strong> – Bakircay University (2024 – ongoing)</li>
-    <li><strong>MSc in Computer Engineering</strong> – Bakircay University (2021 – 2023)</li>
-    <li><strong>BSc in Computer Engineering</strong> – Suleyman Demirel University (2011 – 2015)</li>
+    <li><strong>PhD in Computer Engineering</strong>, Bakircay University (2024 – ongoing)<br><em>Focus: Medical Image Analysis, Drug Discovery, and LLMs</em></li>
+    <li><strong>MSc in Computer Engineering</strong>, Bakircay University (2021–2023)<br><em>Thesis: Comparison of Federated Learning Frameworks for Medical Image Domain</em></li>
+    <li><strong>BSc in Computer Engineering</strong>, Suleyman Demirel University (2011–2015)<br><em>Capstone: IoT-based patient monitoring system</em></li>
   </ul>
 
   <h2 class="section-title"><i class="fas fa-book icon"></i> Publications</h2>
   <ul>
     {% for post in site.publications %}
-      <li><a href="{{ post.url }}"><i class="fas fa-file-alt icon"></i> {{ post.title }}</a><p>{{ post.excerpt }}</p></li>
+      <li><a href="{{ post.url }}"><i class="fas fa-file-alt icon"></i> {{ post.title }}</a> — {{ post.excerpt }}</li>
     {% endfor %}
   </ul>
 
@@ -98,7 +103,7 @@ redirect_from:
     <li>Microsoft Azure AI Fundamentals</li>
     <li>Deep Learning Specialization – Coursera</li>
     <li>AI for Medical Diagnosis – deeplearning.ai</li>
-    <li>NVIDIA Jetson Nano – NVIDIA DLI</li>
+    <li>Getting Started with AI on Jetson Nano – NVIDIA DLI</li>
   </ul>
 
   <h2 class="section-title"><i class="fas fa-hands-helping icon"></i> Volunteering</h2>
@@ -110,7 +115,7 @@ redirect_from:
   <h2 class="section-title"><i class="fas fa-language icon"></i> Languages</h2>
   <div class="languages">
     <span><strong>Turkish:</strong> Native</span>
-    <span><strong>English:</strong> B2 (Improving)</span>
-    <span><strong>German:</strong> A1 (Improving)</span>
+    <span><strong>English:</strong> B2</span>
+    <span><strong>German:</strong> A1</span>
   </div>
 </div>
