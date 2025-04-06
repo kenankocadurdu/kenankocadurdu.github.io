@@ -47,7 +47,7 @@ redirect_from:
       margin: 5px 0 0;
     }
     li {
-      margin: 2px 0 0 5px;
+      margin: 4px 0;
     }
     .languages span {
       margin-right: 15px;
