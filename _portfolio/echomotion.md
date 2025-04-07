@@ -53,20 +53,6 @@ The system mimics the clinical approach: identify **end-diastolic** and **end-sy
 - Metrics: MAE, R², Pearson correlation
 - Overlays and scatter plots for clarity
 
----
-
-## 📊 Results
-
-**Segmentation Accuracy**
-- Dice: ~0.89
-- IoU: ~0.82
-
-**EF Prediction**
-- MAE: ~4.2%
-- R²: ~0.76
-- Pearson: ~0.88
-
-EchoMotion provides accurate and interpretable predictions. Visual outputs include EF curves and frame overlays for clinician trust.
 
 ---
 
