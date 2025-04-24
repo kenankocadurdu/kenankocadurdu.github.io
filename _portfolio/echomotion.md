@@ -6,101 +6,107 @@ collection: portfolio
 
 ## 🫀 Project Overview
 
-**EchoMotion** is a deep learning framework for automatic **left ventricle (LV) segmentation** and **ejection fraction (EF)** estimation from echocardiography videos. It combines **transformer-based encoders**, **temporal modeling**, and **multi-view learning** to approach expert-level accuracy in heart function analysis.
+**EchoMotion** is a deep learning framework for automatic **left ventricle (LV) segmentation** and **ejection fraction (EF)** estimation from echocardiography videos. The model is built in two stages:
 
-This project focuses on bringing **explainable AI** and **clinical alignment** to cardiac imaging by following physician-style EF estimation steps — **segmentation → volume → EF** — rather than direct regression.
+- First, a segmentation model is trained using only the **manually labeled ED and ES frames** (as provided in public datasets like EchoNet-Dynamic).
+- Then, the model is used to generate segmentation masks for **all intermediate frames**, enabling full-sequence analysis and temporal learning.
+
+This strategy allows us to **bootstrap a full cardiac cycle representation** from partial annotations — a practical approach in clinical datasets where dense labeling is expensive.
+
+EchoMotion combines **transformer-based encoders**, **temporal modeling**, and **multi-view learning**, while preserving explainability and clinical alignment by mimicking expert workflows (segmentation → volume → EF).
 
 ---
 
 ## 🩺 Clinical Background
 
-Ejection Fraction (EF) is a core indicator of cardiac function and is widely used in the diagnosis and monitoring of heart failure. Clinically, EF is calculated by measuring the change in **left ventricular (LV) volume** between **end-diastolic (ED)** and **end-systolic (ES)** frames of an echocardiography video.
+Ejection Fraction (EF) is a critical indicator of heart function, used to diagnose and monitor heart failure. Clinically, EF is calculated by measuring volume change of the **left ventricle (LV)** between **end-diastole (ED)** and **end-systole (ES)**.
 
-Traditionally, this involves manually tracing the inner contour of the LV in two orthogonal views (A4C & A2C) — a time-consuming and operator-dependent process prone to variability.
+This is usually done by manually tracing the LV in A4C and A2C echo views — a process that is slow, subjective, and prone to inter-observer variability.
 
-Automating this process using deep learning not only accelerates analysis but also improves consistency. However, challenges include:
+Deep learning offers the potential to automate this process. However, challenges remain:
+- Speckle noise and motion blur in ultrasound images  
+- Anatomical variability between patients  
+- Limited annotated data, typically only ED/ES frames per video  
 
-- Speckle noise and motion blur in ultrasound imaging  
-- Anatomical variability  
-- Generalization across different devices and patients
-
-EchoMotion addresses these gaps by combining state-of-the-art segmentation models with clinical insight and multi-frame, multi-view input.
+EchoMotion addresses these challenges by combining **high-capacity segmentation models**, **temporal context**, and **view fusion** to produce a clinically relevant and scalable EF analysis system.
 
 ---
 
 ## 🎯 Research Objective
 
-The goal of **EchoMotion** is to build an end-to-end deep learning framework for:
+EchoMotion is designed to:
 
-- Segmenting the **left ventricle (LV)** across all frames of an echocardiography video  
-- Estimating **EF** using methods that are clinically aligned — via volume approximation rather than regression  
-- Enhancing model **interpretability** with explainable outputs (e.g., Grad-CAM)  
-- Improving **efficiency** through active learning and modular architecture
+- Learn to segment the LV using only ED/ES-labeled frames  
+- Automatically generate intermediate-frame masks across full cardiac cycles  
+- Use those outputs to model **temporal dynamics** of heart motion  
+- Estimate EF from derived volume curves using a clinical method  
+- Support interpretability and trust via Grad-CAM and transparent calculations
 
-The focus is not just on model accuracy, but also on **trustworthiness**, **scalability**, and **realistic clinical deployment**.
+This approach balances **clinical realism**, **data efficiency**, and **modern ML techniques**.
 
 ---
 
 ## 🧠 Core Features
 
 - **Transformer + U-Net Hybrid Architectures**  
-  Custom segmentation models built on **SegFormer** backbone (B0–B2) enhanced with attention modules such as **SE**, **CBAM**, and **DANet**
+  Built on **SegFormer** backbones with integrated attention modules (SE, CBAM, DANet)
+
+- **Sparse-to-Dense Learning Pipeline**  
+  Trained on ED/ES pairs, generalized to full-sequence segmentation for full cardiac cycle modeling
 
 - **Spatio-Temporal Frame Analysis**  
-  Temporal context is leveraged using short frame sequences to improve cardiac cycle consistency and segmentation robustness
+  Sequence modeling (planned) for smooth, consistent heart motion representation
 
-- **Multi-View Fusion (A4C + A2C)** *(in progress)*  
-  Dual-encoder design with attention-based fusion for clinical biplane EF analysis
-
-- **EF Estimation Pipeline**  
-  EF is computed using **area-based volume approximations** over time, mirroring clinical Simpson’s method
+- **Multi-View Fusion (in progress)**  
+  Dual-encoder design to jointly leverage A4C and A2C views for improved EF estimation
 
 - **Explainability via Grad-CAM**  
-  Visual feedback on model attention improves interpretability for medical professionals
+  Visualizes model attention to support clinical trust
 
-- **Active Learning Loop** *(planned)*  
-  Integrates uncertainty-based sample selection to reduce annotation effort and improve label efficiency
+- **Active Learning Loop (planned)**  
+  Uses uncertainty-based selection to identify frames for further expert annotation
 
 ---
 
 ## 🧪 Methodology
 
-The pipeline consists of four core stages:
+The pipeline consists of four main stages:
 
 ### 1. Preprocessing
-- Frame-level decomposition of video sequences  
-- Resizing and normalization (mean/std statistics)  
-- Dataset split using official train/val/test partitions  
+- Extract ED and ES labeled frames from echocardiography videos  
+- Apply **CLAHE** for contrast enhancement and **bilateral filtering** to reduce speckle noise  
+- Resize, normalize, and split into training/validation/test sets
 
 ### 2. Segmentation Network (EchoMotionNet)
-- Transformer-enhanced encoders: **SegFormer B0–B2**  
-- U-Net style decoders with multi-scale skip connections  
-- Attention modules: **SE**, **CBAM**, **DANet**  
-- Optional sequence input for **temporal modeling**
+- Encoder: **SegFormer B0–B2** backbones  
+- Decoder: U-Net-style with skip connections  
+- Attention: SE / CBAM / DANet modules  
+- Trained only on ED/ES frames (sparse supervision)
 
-### 3. Ejection Fraction Estimation
-- **Area-based EF calculation**:  
+### 3. Temporal Expansion & EF Estimation
+- Use trained model to infer masks for **all frames** in the video  
+- Compute LV area per frame, extract EDV/ESV, and calculate:
+  
   \[
   EF = \frac{EDV - ESV}{EDV} \times 100
   \]
-- Frame-wise mask analysis to extract volume dynamics (ED/ES)  
-- Optional regression head for joint segmentation + EF prediction  
+  
+- (Planned) Learn temporal features directly using Bi-LSTM or Temporal Transformers
 
 ### 4. Evaluation & Visualization
-- Metrics: **Dice**, **IoU**, **MAE (EF)**, **R²**, **Pearson**  
-- Visual outputs: predicted vs. ground truth masks, **EF scatter plots**  
-- **Grad-CAM heatmaps** for model explainability
+- Metrics: Dice, IoU, MAE (EF), R², Pearson  
+- Visual outputs: segmentation overlays, Grad-CAM maps, EF scatter plots
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **PyTorch** – for modeling and training  
-- **Transformers** (HuggingFace + timm) – attention-based encoders  
-- **Hydra** – for experiment configuration  
-- **MLflow** – for experiment tracking and visualization  
-- **OpenCV / PIL / Matplotlib** – for visualization  
-- **Scikit-learn** – for evaluation metrics  
+- **PyTorch**  
+- **SegFormer** (via HuggingFace / Timm)  
+- **Hydra** for configuration  
+- **MLflow** for experiment tracking  
+- **OpenCV**, **PIL**, **Matplotlib** for visualization  
+- **Scikit-learn** for evaluation metrics
 
 ---
 
@@ -108,17 +114,17 @@ The pipeline consists of four core stages:
 
 - **Segmentation Metrics:** Dice, IoU  
 - **EF Accuracy:** MAE, R², Pearson correlation  
-- **Explainable Outputs:** Segmentation masks, Grad-CAM heatmaps, EF scatter plots  
+- **Explainable Outputs:** Grad-CAM maps, EF area plots, segmentation overlays
 
 ---
 
 ## 💡 Why EchoMotion?
 
-This project demonstrates:
+This project showcases:
 
-- Practical experience in designing **modular, research-level deep learning pipelines**  
-- Hands-on implementation of **Transformer architectures**, **temporal models**, and **active learning** workflows  
-- The ability to **translate clinical workflows into AI logic**  
-- A focus on **explainability and reproducibility**, which are essential in medical AI
+- **Sparse-to-dense training strategies** for realistic clinical datasets  
+- **Transformer-based architectures** in medical segmentation  
+- **Temporal modeling potential** for dynamic anatomy  
+- Strong focus on **explainability**, **clinical relevance**, and **future scalability**
 
 ---
