@@ -74,10 +74,6 @@ redirect_from:
     </div>
     <ul>
       <li>Conduct research in AI for medical imaging, drug discovery, and bioinformatics.</li>
-      <li>Developed <strong>EchoMotion</strong>, an AI tool for analyzing echocardiography videos.</li>
-      <li>Designed <strong>PLAff</strong>, an explainable protein-ligand interaction model using LLM-based knowledge graphs.</li>
-      <li>Built <strong>FlowSphere</strong>, an MLOps platform for streamlined model training, deployment, and monitoring.</li>
-      <li>Created <strong>AutoMicro</strong>, a system for automated analysis of microscopic images.</li>
       <li>Engineered a Java-based hospital cost analysis tool for financial decision-making.</li>
       <li>Developed a QR-based patrol tracking system using FastAPI and Node.js.</li>
     </ul>
