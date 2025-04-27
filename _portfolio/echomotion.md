@@ -1,12 +1,12 @@
 ---
-title: "EchoMotion"
+title: "Echo-Motion"
 excerpt: "Transformer-based Multi-View Cardiac Segmentation and EF Estimation from Echocardiography"
 collection: portfolio
 ---
 
 ## 🫀 Project Overview
 
-**EchoMotion** is a deep learning framework for automatic **left ventricle (LV) segmentation** and **ejection fraction (EF)** estimation from echocardiography videos. The model is built in two stages:
+**Echo-Motion** is a deep learning framework for automatic **left ventricle (LV) segmentation** and **ejection fraction (EF)** estimation from echocardiography videos. The model is built in two stages:
 
 - First, a segmentation model is trained using only the **manually labeled ED and ES frames** (as provided in public datasets like EchoNet-Dynamic).
 - Then, the model is used to generate segmentation masks for **all intermediate frames**, enabling full-sequence analysis and temporal learning.
