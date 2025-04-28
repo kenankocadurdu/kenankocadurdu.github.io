@@ -8,12 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I’m Kenan Kocadurdu, a PhD candidate in Computer Engineering, focusing on Artificial Intelligence and its applications in healthcare.
+Hello! I’m Kenan Kocadurdu, a Computer Engineer and PhD candidate specializing in Artificial Intelligence, Machine Learning, and Medical Image Analysis.
 
-I have several years of experience developing AI-based systems to support medical decision-making and improve operational efficiency. My work combines deep learning, computer vision, and bioinformatics to solve real-world problems in both clinical and industrial environments. I love exploring how technology can bring innovation to healthcare and make a real difference in people’s lives.
+I have extensive experience designing AI-based systems to support medical decision-making, automate diagnostics, and optimize healthcare operations. My expertise includes deep learning, computer vision, and bioinformatics, with a strong focus on developing real-world applications in clinical and industrial settings.
 
-On this website, you’ll find my resume, portfolio, and open-source codes. Feel free to connect if you’re interested in collaboration, research opportunities, or just want to chat about AI in medicine.
+Currently based in Berlin with a valid work permit, I am actively seeking new opportunities as an AI Engineer or Machine Learning Engineer.
 
-Let’s build something meaningful together!
+You can find my resume, portfolio, and open-source projects on this website. Feel free to connect if you are looking for collaboration, research partnership, or AI-driven innovation in healthcare.
 
-*Machine Learning, Deep Learning, Medical Image Analysis, Bioinformatics*
+Let’s build impactful solutions together!
+
+Keywords: AI Engineer, Machine Learning Engineer, Deep Learning, Medical Imaging, Bioinformatics, Computer Vision, MLOps, Cloud Automation
