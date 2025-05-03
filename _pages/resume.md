@@ -23,22 +23,22 @@ redirect_from:
   }
 
   .container {
-    max-width: 900px;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: 10px auto;
     background-color: #ffffff;
-    padding: 30px 40px;
+    padding: 10px 10px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   }
 
   .section-title {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: #34495e;
     border-bottom: 2px solid #ddd;
     padding-bottom: 6px;
-    margin-top: 40px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
   }
@@ -61,7 +61,7 @@ redirect_from:
     font-weight: 600;
     color: #2c3e50;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   p {
@@ -191,7 +191,6 @@ redirect_from:
       <span><i class="fas fa-university icon"></i> BSc in Computer Engineering | 2011 - 2015<br>Suleyman Demirel University, Türkiye</span>
     </div>
     <p><em>Capstone Project: Development of an IoT-based patient monitoring system.
-  </div>
 
   <h2 class="section-title"><i class="fas fa-book icon"></i> Publications</h2>
   <ul>
