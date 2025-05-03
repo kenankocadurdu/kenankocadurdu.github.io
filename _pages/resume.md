@@ -37,7 +37,7 @@ redirect_from:
     color: #34495e;
     border-bottom: 2px solid #ddd;
     padding-bottom: 6px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -60,7 +60,7 @@ redirect_from:
     align-items: flex-start;
     font-weight: 600;
     color: #2c3e50;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 18px;
   }
 
@@ -71,11 +71,11 @@ redirect_from:
   ul {
     list-style-type: disc;
     padding-left: 20px;
-    margin: 0 0 15px;
+    margin: 0 0 10px;
   }
 
   li {
-    margin-bottom: 6px;
+    margin-bottom: 2px;
   }
 
   .languages span {
@@ -84,8 +84,8 @@ redirect_from:
 
   strong {
     display: block;
-    margin-top: 10px;
-    font-weight: 500;
+    margin-top: 6px;
+    font-weight: 600;
     color: #2c3e50;
   }
 
