@@ -13,139 +13,184 @@ redirect_from:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 15px 20px;
-    }
-    .section-title {
-      font-size: 18px;
-      font-weight: 600;
-      border-bottom: 1px solid #ccc;
-      margin: 20px 0 10px;
-      padding-bottom: 5px;
-    }
-    .experience-item, .education-item {
-      margin-bottom: 15px;
-    }
-    .experience-header, .education-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      font-weight: 600;
-      margin-top: 10px;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 25px;
-      margin: 5px 0 0;
-    }
-    li {
-      margin: 4px 0;
-    }
-    .languages span {
-      margin-right: 15px;
-    }
-    .icon {
-      margin-right: 8px;
-    }
-  </style>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #34495e;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 6px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-title .icon {
+    margin-right: 10px;
+    color: #007bff;
+  }
+
+  .experience-item,
+  .education-item {
+    margin-bottom: 20px;
+  }
+
+  .experience-header,
+  .education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  p {
+    margin: 5px 0 10px;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0 0 15px;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  .languages span {
+    margin-right: 15px;
+  }
+
+  strong {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 
 <div class="container">
 
   <h2 class="section-title"><i class="fas fa-user icon"></i> Summary</h2>
   <p>
-    PhD candidate in Computer Engineering with expertise in AI-driven systems for healthcare and industrial domains. Skilled in machine learning, deep learning, computer vision, and bioinformatics. Passionate about scalable, data-centric technologies for real-world impact.
+    Computer Engineer with expertise in AI-driven solutions, medical imaging, and cloud-based automation. Skilled in developing scalable platforms and innovative technologies to optimize healthcare operations and drive impactful results.
   </p>
 
   <h2 class="section-title"><i class="fas fa-briefcase icon"></i> Experience</h2>
 
   <div class="experience-item">
     <div class="experience-header">
-      <span><i class="fas fa-hospital icon"></i> Bakircay University Hospital – Computer Engineer</span>
-      <span><em>2019 – 2025</em></span>
+      <span><i class="fas fa-hospital icon"></i> Bakircay University Hospital | Computer Engineer | 2019 – 2025</span>
     </div>
+    <p>Designed, developed and deployed AI-powered applications and digital tools tailored to clinical needs and operational workflows within a university hospital setting</p>
     <ul>
-      <li>Conduct research in AI for medical imaging, drug discovery, and bioinformatics.</li>
-      <li>Engineered a Java-based hospital cost analysis tool for financial decision-making.</li>
-      <li>Developed a QR-based patrol tracking system using FastAPI and Node.js.</li>
+      <li>EchoMotion: Designed and built a deep learning system to automatically analyze heart function from echocardiography videos. Integrated Large Language Models (LLMs) to interpret diagnostic findings via prompt-based reporting.</li>
+      <li>AutoMicro: Created an AI-powered microscopic image analysis system - from image acquisition to real-time prediction.</li>
+      <li>FlowSphere: Designed and built a centralized platform to manage MLOps applications and streamline machine learning workflows.</li>
+    </ul>
+    <p>Operational and Financial Optimization:</p>
+    <ul>
+      <li>Hospital Cost Analyzer: Built a Java-based app to track and report hospital costs.</li>
+      <li>Security Patrol Tracking: Built a QR-based patrol tracking system using FastAPI and Node.js.</li>
+    </ul>
+
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-header">
+      <span><i class="fas fa-network-wired icon"></i> Aydin Health Directorate | IT Specialist | 2017 - 2019</span>
+    </div>
+    <p>Served as the central IT coordinator for all public healthcare institutions in Aydın province, overseeing infrastructure, planning, and digital transformation across more than 10 hospitals and clinics.</p>
+    <ul>
+      <li>Designed and developed a custom HRIS, human resource information system.</li>
+      <li>Organized and delivered technical trainings for hospital IT staff</li>
     </ul>
   </div>
 
   <div class="experience-item">
     <div class="experience-header">
-      <span><i class="fas fa-network-wired icon"></i> Aydin Health Directorate – IT Specialist</span>
-      <span><em>2017 – 2019</em></span>
+      <span><i class="fas fa-industry icon"></i> Maroli Food Industry and Foreign Trade. Inc. | Software Engineer | 2017 - 2018</span>
     </div>
+    <p>Worked independently with the in-house team to develop a custom ERP system for an olive production facility, based on requirements identified.</p>
     <ul>
-      <li>Managed IT infrastructure across more than 10 hospitals, ensuring stability and performance.</li>
-      <li>Designed and implemented a human resources information system (HRIS).</li>
-      <li>Led technical training programs for IT staff.</li>
+      <li>Developed and delivered an end-to-end ERP system covering procurement, inventory, and production workflows.</li>
+      <li>Contributed to measurable improvements, including a 10% increase in purchasing efficiency and 5% in production performance through automation.</li>
     </ul>
   </div>
 
   <div class="experience-item">
     <div class="experience-header">
-      <span><i class="fas fa-industry icon"></i> Maroli Food Industry – Software Engineer</span>
-      <span><em>2017 – 2018</em></span>
+      <span><i class="fas fa-clinic-medical icon"></i> Aydin Cancer Early Diagnosis Center | Computer Engineer | 2014 - 2017</span>
     </div>
+    <p>Provided comprehensive IT support and infrastructure management to ensure the continuity and reliability of healthcare services.</p>
     <ul>
-      <li>Built a custom ERP system for procurement and production operations in an olive factory.</li>
-      <li>Achieved 10% improvement in purchasing and 5% in production efficiency through automation.</li>
+      <li>Managed data storage infrastructure, ensuring data integrity and system reliability.</li>
     </ul>
   </div>
 
-  <div class="experience-item">
-    <div class="experience-header">
-      <span><i class="fas fa-clinic-medical icon"></i> Aydin Cancer Early Diagnosis Center – Computer Engineer</span>
-      <span><em>2014 – 2017</em></span>
-    </div>
-    <ul>
-      <li>Maintained data storage infrastructure with high availability and integrity.</li>
-      <li>Developed a Java-based web application for patient tracking and reporting.</li>
-    </ul>
-  </div>
-
-  <h2 class="section-title"><i class="fas fa-code icon"></i> Technical Skills</h2>
+  <h2 class="section-title"><i class="fas fa-code icon"></i>Skills</h2>
+  <strong>AI / Machine Learning:</strong>
   <ul>
-    <li><strong>Languages:</strong> Python, Java, MATLAB</li>
-    <li><strong>AI:</strong> Deep Learning, Computer Vision, Federated Learning</li>
-    <li><strong>Frameworks:</strong> PyTorch, Scikit-Learn, MLFlow, FastAPI</li>
-    <li><strong>DevOps:</strong> Docker, Kubernetes, Azure DevOps, Git</li>
-    <li><strong>Data:</strong> Neo4j, Graph Databases</li>
+    <li>Deep Learning, Medical Image Analysis, Federated Learning, Large Language Models (LLMs)</li>
+    <li>PyTorch, Scikit-learn, MLFlow</li>
   </ul>
+  <strong>Software Development:</strong>
+  <ul>
+    <li>Languages: Python, Java, MATLAB, JavaScript</li>
+    <li>Web Technologies: React, Node.js, FastAPI</li>
+    <li>DevOps & CI/CD: Docker, Kubernetes, Git/GitHub</li>
+  </ul>
+  <strong>Cloud & Data Engineering:</strong>
+  <p>Microsoft Azure (AI, Storage, App Services), RESTful APIs, Microservices, System Integration</p>
+  <strong>Languages:</strong>
+  <p>Turkish (Native), English (B2), German (actively improving)</p>
 
   <h2 class="section-title"><i class="fas fa-graduation-cap icon"></i> Education</h2>
 
   <div class="education-item">
     <div class="education-header">
-      <span><i class="fas fa-university icon"></i> PhD in Computer Engineering – Bakircay University</span>
-      <span><em>2024 – ongoing</em></span>
+      <span><i class="fas fa-university icon"></i> PhD in Computer Engineering | 2024 - 2028<br>Bakircay University, Türkiye</br></span>
     </div>
-    <p><em>Focus:</em> Medical Image Analysis, Drug Discovery, and LLMs</p>
-  </div>
-
-  <div class="education-item">
+    <p><em>Focus: Medical Image Analysis, Drug discovery, and Large Language Models (LLMs).</p>
     <div class="education-header">
-      <span><i class="fas fa-university icon"></i> MSc in Computer Engineering – Bakircay University</span>
-      <span><em>2021 – 2023</em></span>
+      <span><i class="fas fa-university icon"></i> MSc in Computer Engineering | 2021 - 2023<br>Bakircay University, Türkiye</br></span>
     </div>
-    <p><em>Thesis:</em> Comparison of Federated Learning Frameworks for Medical Image Domain</p>
-  </div>
-
-  <div class="education-item">
+    <p><em>Thesis: Comparison of Federated Learning Frameworks for Medical Image Domain.</p>
     <div class="education-header">
-      <span><i class="fas fa-university icon"></i> BSc in Computer Engineering – Suleyman Demirel University</span>
-      <span><em>2011 – 2015</em></span>
+      <span><i class="fas fa-university icon"></i> BSc in Computer Engineering | 2011 - 2015<br>Suleyman Demirel University, Türkiye</br></span>
     </div>
-    <p><em>Capstone:</em> IoT-based patient monitoring system</p>
+    <p><em>Capstone Project: Development of an IoT-based patient monitoring system.</p>
   </div>
 
   <h2 class="section-title"><i class="fas fa-book icon"></i> Publications</h2>
@@ -168,11 +213,4 @@ redirect_from:
     <li>Member – Medical Informatics Association, Türkiye</li>
     <li>Founding Member – Aegean Health Managers Association</li>
   </ul>
-
-  <h2 class="section-title"><i class="fas fa-language icon"></i> Languages</h2>
-  <div class="languages">
-    <span><strong>Turkish:</strong> Native</span>
-    <span><strong>English:</strong> B2</span>
-    <span><strong>German:</strong> A1</span>
-  </div>
 </div>
