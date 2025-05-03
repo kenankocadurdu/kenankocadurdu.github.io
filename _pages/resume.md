@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: Kenan Kocadurdu <br> PhD Candidate | Master’s | Bachelor’s in Computer Engineering
+title:
 permalink: /resume/
 author_profile: true
 redirect_from:
@@ -101,7 +101,7 @@ redirect_from:
 </head>
 
 <div class="container">
-
+   <h2><span>Kenan Kocadurdu <br> PhD Candidate | Master’s | Bachelor’s in Computer Engineering</span></h2>
   <h2 class="section-title"><i class="fas fa-user icon"></i> Summary</h2>
   <p>
     Computer Engineer with expertise in AI-driven solutions, medical imaging, and cloud-based automation. Skilled in developing scalable platforms and innovative technologies to optimize healthcare operations and drive impactful results.
