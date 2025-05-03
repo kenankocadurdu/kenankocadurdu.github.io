@@ -24,7 +24,7 @@ redirect_from:
 
   .container {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 20px auto;
     background-color: #ffffff;
     padding: 30px 40px;
     border-radius: 12px;
@@ -32,8 +32,8 @@ redirect_from:
   }
 
   .section-title {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     color: #34495e;
     border-bottom: 2px solid #ddd;
     padding-bottom: 6px;
@@ -50,7 +50,7 @@ redirect_from:
 
   .experience-item,
   .education-item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .experience-header,
@@ -65,7 +65,7 @@ redirect_from:
   }
 
   p {
-    margin: 5px 0 10px;
+    margin: 3px 0 5px;
   }
 
   ul {
@@ -84,8 +84,8 @@ redirect_from:
 
   strong {
     display: block;
-    margin-top: 15px;
-    font-weight: 600;
+    margin-top: 10px;
+    font-weight: 500;
     color: #2c3e50;
   }
 
@@ -111,7 +111,7 @@ redirect_from:
 
   <div class="experience-item">
     <div class="experience-header">
-      <span><i class="fas fa-hospital icon"></i> Bakircay University Hospital | Computer Engineer | 2019 – 2025</span>
+      <span><i class="fas fa-hospital icon"></i>  Bakircay University Hospital | Computer Engineer | 2019 – 2025</span>
     </div>
     <p>Designed, developed and deployed AI-powered applications and digital tools tailored to clinical needs and operational workflows within a university hospital setting</p>
     <ul>
@@ -129,7 +129,7 @@ redirect_from:
 
   <div class="experience-item">
     <div class="experience-header">
-      <span><i class="fas fa-network-wired icon"></i> Aydin Health Directorate | IT Specialist | 2017 - 2019</span>
+      <span><i class="fas fa-network-wired icon"></i>  Aydin Health Directorate | IT Specialist | 2017 - 2019</span>
     </div>
     <p>Served as the central IT coordinator for all public healthcare institutions in Aydın province, overseeing infrastructure, planning, and digital transformation across more than 10 hospitals and clinics.</p>
     <ul>
@@ -180,23 +180,23 @@ redirect_from:
 
   <div class="education-item">
     <div class="education-header">
-      <span><i class="fas fa-university icon"></i> PhD in Computer Engineering | 2024 - 2028<br>Bakircay University, Türkiye</br></span>
+      <span><i class="fas fa-university icon"></i> PhD in Computer Engineering | 2024 - 2028<br>Bakircay University, Türkiye</span>
     </div>
-    <p><em>Focus: Medical Image Analysis, Drug discovery, and Large Language Models (LLMs).</p>
+    <p><em>Focus: Medical Image Analysis, Drug discovery, and Large Language Models (LLMs).
     <div class="education-header">
-      <span><i class="fas fa-university icon"></i> MSc in Computer Engineering | 2021 - 2023<br>Bakircay University, Türkiye</br></span>
+      <span><i class="fas fa-university icon"></i> MSc in Computer Engineering | 2021 - 2023<br>Bakircay University, Türkiye</span>
     </div>
-    <p><em>Thesis: Comparison of Federated Learning Frameworks for Medical Image Domain.</p>
+    <p><em>Thesis: Comparison of Federated Learning Frameworks for Medical Image Domain.
     <div class="education-header">
-      <span><i class="fas fa-university icon"></i> BSc in Computer Engineering | 2011 - 2015<br>Suleyman Demirel University, Türkiye</br></span>
+      <span><i class="fas fa-university icon"></i> BSc in Computer Engineering | 2011 - 2015<br>Suleyman Demirel University, Türkiye</span>
     </div>
-    <p><em>Capstone Project: Development of an IoT-based patient monitoring system.</p>
+    <p><em>Capstone Project: Development of an IoT-based patient monitoring system.
   </div>
 
   <h2 class="section-title"><i class="fas fa-book icon"></i> Publications</h2>
   <ul>
     {% for post in site.publications %}
-      <li><a href="{{ post.url }}"><i class="fas fa-file-alt icon"></i> {{ post.title }}</a> — {{ post.excerpt }}</li>
+      <li><a href="{{ post.url }}"><i class="fas fa-file-alt icon"></i> {{ post.title }}</a>{{ post.excerpt }}</li>
     {% endfor %}
   </ul>
 
@@ -213,4 +213,3 @@ redirect_from:
     <li>Member – Medical Informatics Association, Türkiye</li>
     <li>Founding Member – Aegean Health Managers Association</li>
   </ul>
-</div>
