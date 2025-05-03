@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: Kenan Kocadurdu
+title: Kenan Kocadurdu <br> PhD Candidate | Master’s | Bachelor’s in Computer Engineering
 permalink: /resume/
 author_profile: true
 redirect_from:
