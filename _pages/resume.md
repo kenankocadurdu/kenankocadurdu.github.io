@@ -174,7 +174,7 @@ redirect_from:
   <strong>Cloud & Data Engineering:</strong>
   <p>Microsoft Azure (AI, Storage, App Services), RESTful APIs, Microservices, System Integration</p>
   <strong>Languages:</strong>
-  <p>Turkish (Native), English (B2), German (actively improving)</p>
+  <p>Turkish (Native), English (B1), German (actively improving)</p>
 
   <h2 class="section-title"><i class="fas fa-graduation-cap icon"></i> Education</h2>
 
