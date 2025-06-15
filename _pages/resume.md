@@ -117,7 +117,6 @@ redirect_from:
     <ul>
       <li>EchoMotion: Designed and built a deep learning system to automatically analyze heart function from echocardiography videos. Integrated Large Language Models (LLMs) to interpret diagnostic findings via prompt-based reporting.</li>
       <li>AutoMicro: Created an AI-powered microscopic image analysis system - from image acquisition to real-time prediction.</li>
-      <li>FlowSphere: Designed and built a centralized platform to manage MLOps applications and streamline machine learning workflows.</li>
     </ul>
     <p>Operational and Financial Optimization:</p>
     <ul>
